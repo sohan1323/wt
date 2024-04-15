@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Number Checker</title>
+    <script src= numberChecker.js></script>
+</head>
+<body>
+    <h2>Number Checker</h2>
+
+    <label for="numberInput">Enter a number:</label>
+    <input type="text" id="numberInput">
+    <button onclick="checkAndDisplay()">Check</button>
+
+    <div id="result"></div>
+
+    <script>
+       function checkAndDisplay() {
+    var inputNumber = parseFloat(document.getElementById("numberInput").value);
+    var resultDiv = document.getElementById("result");
+
+    
+    if (isNaN(inputNumber)) {
+        resultDiv.textContent = "Please enter a valid number.";
+        return; 
+    }
+
+    
+    var result = checkNumber(inputNumber);
+
+    
+    resultDiv.textContent = "The number is " + result + ".";
+}
+
+    </script>
+</body>
+</html>

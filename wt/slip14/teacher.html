@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Teacher Details</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    $("#teacherSelect").change(function() {
+        var selectedTeacher = $(this).val();
+        $.ajax({
+            url: "get_teacher_details.php",
+            type: "GET",
+            data: { teacher: selectedTeacher },
+            success: function(response) {
+                $("#teacherDetails").html(response);
+            },
+            error: function(xhr, status, error) {
+                console.log(xhr.responseText);
+            }
+        });
+    });
+});
+</script>
+</head>
+<body>
+
+<h2>Select Teacher:</h2>
+<select id="teacherSelect">
+    <option value="">Select</option>
+    <option value="Teacher1">Teacher1</option>
+    <option value="Teacher2">Teacher2</option>
+    <!-- Add more options as needed -->
+</select>
+
+<div id="teacherDetails"></div>
+
+</body>
+</html>

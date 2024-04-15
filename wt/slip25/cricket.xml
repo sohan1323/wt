@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CricketTeam>
+    <Team country="Australia">
+        <player>Player 1</player>
+        <runs>100</runs>
+        <wicket>10</wicket>
+    </Team>
+    <Team country="Australia">
+        <player>Player 2</player>
+        <runs>150</runs>
+        <wicket>15</wicket>
+    </Team>
+    <Team country="Australia">
+        <player>Player 3</player>
+        <runs>80</runs>
+        <wicket>5</wicket>
+    </Team>
+<Team country="India"><player>Sachin Tendulkar<runs>18426</runs><wicket>46</wicket></player><player>Virat Kohli<runs>12169</runs><wicket>8</wicket></player><player>Rohit Sharma<runs>9205</runs><wicket>8</wicket></player><player>MS Dhoni<runs>10773</runs><wicket>0</wicket></player><player>Ravindra Jadeja<runs>2412</runs><wicket>192</wicket></player><player>MS Dhoni<runs>10773</runs><wicket>0</wicket></player><player>Ravindra Jadeja<runs>2412</runs><wicket>192</wicket></player></Team></CricketTeam>
