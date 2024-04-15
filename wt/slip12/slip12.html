@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contact List</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#printBtn").click(function(){
+        $.ajax({
+            url: "contact.dat.txt",
+            dataType: "text",
+            success: function(data) {
+                var lines = data.split("\n");
+                var tableHtml = "<table border='1'><tr><th>Sr. No.</th><th>Name</th><th>Residence Number</th><th>Mobile Number</th><th>Address</th></tr>";
+                for(var i = 0; i < lines.length; i++) {
+                    var fields = lines[i].split(",");
+                    tableHtml += "<tr>";
+                    for(var j = 0; j < fields.length; j++) {
+                        tableHtml += "<td>" + fields[j] + "</td>";
+                    }
+                    tableHtml += "</tr>";
+                }
+                tableHtml += "</table>";
+                $("#contactTable").html(tableHtml);
+            }
+        });
+    });
+});
+</script>
+</head>
+<body>
+
+<button id="printBtn">Print Contacts</button>
+
+<div id="contactTable"></div>
+
+</body>
+</html>

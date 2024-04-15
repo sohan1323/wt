@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Items>
+    <Item>
+        <Name>Item1</Name>
+        <Type>Type1</Type>
+        <Rate>10.99</Rate>
+        <Quantity>100</Quantity>
+    </Item>
+    <Item>
+        <Name>Item2</Name>
+        <Type>Type2</Type>
+        <Rate>5.49</Rate>
+        <Quantity>50</Quantity>
+    </Item>
+    <Item>
+        <Name>Item3</Name>
+        <Type>Type3</Type>
+        <Rate>15.75</Rate>
+        <Quantity>75</Quantity>
+    </Item>
+    <Item>
+        <Name>Item4</Name>
+        <Type>Type4</Type>
+        <Rate>8.25</Rate>
+        <Quantity>120</Quantity>
+    </Item>
+    <Item>
+        <Name>Item5</Name>
+        <Type>Type5</Type>
+        <Rate>12.50</Rate>
+        <Quantity>200</Quantity>
+    </Item>
+</Items>
